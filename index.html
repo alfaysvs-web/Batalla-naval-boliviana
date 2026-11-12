@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Naval Bolivia</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>🇧🇴 BATALLA NAVAL 🇧🇴</h1>
+    <p>Bolivia contra la flota enemiga</p>
+</header>
+
+<section class="panel">
+    <div class="dato">
+        ❤️ VIDA
+        <div class="barra">
+            <div id="barraVida"></div>
+        </div>
+        <span id="vida">100 / 100</span>
+    </div>
+
+    <div class="dato">
+        🎯 PUNTOS
+        <strong id="puntos">0</strong>
+    </div>
+
+    <div class="dato">
+        🚢 ENEMIGOS
+        <strong id="enemigos">5</strong>
+    </div>
+</section>
+
+<main>
+    <div class="juego-contenedor">
+        <canvas id="juego" width="1000" height="600"></canvas>
+    </div>
+</main>
+
+<section class="controles">
+    <h3>CONTROLES</h3>
+    <p>Computadora: WASD o flechas para moverte.</p>
+    <p>Espacio: disparar.</p>
+    <p>Celular y tablet: utiliza los botones de abajo.</p>
+
+    <div class="controles-movimiento">
+        <div class="cruceta">
+            <button class="control" data-key="ArrowUp">▲</button>
+            <div class="fila">
+                <button class="control" data-key="ArrowLeft">◀</button>
+                <button class="control" data-key="ArrowDown">▼</button>
+                <button class="control" data-key="ArrowRight">▶</button>
+            </div>
+        </div>
+
+        <button id="disparar" class="boton-disparo">
+            🔥 DISPARAR
+        </button>
+    </div>
+
+    <button id="reiniciar" class="reiniciar">
+        🔄 NUEVA PARTIDA
+    </button>
+</section>
+
+<footer>
+    <p>🇧🇴 BATALLA NAVAL BOLIVIA 🇧🇴</p>
+    <small>Protege tu barco y derrota a la flota enemiga.</small>
+</footer>
+
+<script src="juegos.js"></script>
+</body>
+</html>
